@@ -32,7 +32,7 @@ def create_database():
     try:
         # Conectar a MySQL sin especificar una base de datos
         conn = pymysql.connect(
-            host="127.0.0.1:3306",
+            host="127.0.0.1:3308",
             user="root",
             password="1234"
         )
