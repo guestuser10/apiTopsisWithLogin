@@ -15,7 +15,7 @@ import pymysql
 import ctypes
 
 # Configuración de la aplicación
-app = FastAPI(title="API de Matrices y TOPSIS")
+app = FastAPI(title="API TOPSIS")
 
 # Configuración de CORS
 app.add_middleware(
@@ -32,7 +32,7 @@ def create_database():
     try:
         # Conectar a MySQL sin especificar una base de datos
         conn = pymysql.connect(
-            host="localhost",
+            host="127.0.1:3308",
             user="root",
             password="1234"
         )
